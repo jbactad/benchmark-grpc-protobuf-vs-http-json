@@ -1,0 +1,18 @@
+{
+  "name": "Benchmark GRPC vs HTTP",
+  "description": "A benchmark of grpc and http.",
+  "keywords": [
+    "grpc",
+    "http",
+    "benchmark"
+  ],
+  "repository": "https://github.com/jbactad/benchmark-grpc-protobuf-vs-http-json",
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "go mod download",
+        "test": "GO111MODULE=on go test -bench=. -benchmem"
+      }
+    }
+  }
+}
